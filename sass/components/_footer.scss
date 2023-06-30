@@ -5,6 +5,11 @@
     &__container {
         display: flex;
         align-items: baseline;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
     }
 
     &__link {
@@ -53,6 +58,14 @@
 }
 
 .footer-address {
+    @media screen and (max-width: 768px) {
+        display: flex; 
+        flex-basis: calc(50% - 40px);  
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
 
 &__link {
     font-size: 14px;
@@ -62,7 +75,7 @@
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-}
+
 
 .footer-contact {
 
@@ -80,7 +93,7 @@
     margin-top: 9px;
 }
 }
-
+}
 .footer-mail__link {
     color: rgba(255,255,255,0.6);
     text-decoration: none;
@@ -102,6 +115,14 @@
 .footer-join-us {
     gap: 10px;
     margin-left: 70px;
+
+    @media screen and (max-width: 768px) {
+        display: flex; 
+        flex-basis: calc(50% - 40px);  
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
 
 &__heading {
     color: $white;
@@ -139,7 +160,11 @@
     line-height: 1.1428em;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-left: auto;
+
+    @media screen and (max-width: 768px) {
+        margin: auto;
+    }
+    
 
 
 &__form {
@@ -152,13 +177,21 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
-    display: flex;
+    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 20px;
+        text-align: center;
+    }
 }
 
 &__input {
     box-sizing: border-box;
     color: $white;
-    width: 358px;
     height: 50px;
     background: $dark-gray;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -166,6 +199,15 @@
     padding-left: 15px;
     margin-right: 12px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        width: 358px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 450px;
+        display: block;
+    }
 }
 
 &__input:hover {
@@ -174,7 +216,6 @@
 
 &__button {
     position: relative;
-    width: 200px;
     height: 50px;
     background-color: $blue;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -190,6 +231,15 @@
     text-align: left;
     padding-left: 42px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        width: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 200px;
+        display: block;
+    }
 }
 
 &__button:hover {

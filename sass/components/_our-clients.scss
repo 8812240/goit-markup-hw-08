@@ -13,8 +13,21 @@
     &__list {
         display: flex;
         gap: 30px;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
     }
-    
+    &__item {
+        @media screen and (max-width: 768px) {
+            display: flex; 
+            flex-basis: 30%;  
+            justify-content: center;
+            flex-direction: row;
+        }
+    }
+
     &__link {
         display: flex;
         justify-content: center;

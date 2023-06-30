@@ -77,10 +77,18 @@
     }
     
     .contact-info {
+
+        @media screen and (min-width: 768px) {
+        
         list-style: none;
         display: flex;
         gap: 50px;
         align-items: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
 
         &__text {
             font-weight: 500;
@@ -142,5 +150,12 @@
     &__link:hover &__text {
         color: $blue;
     }
-    
+
+    @media (max-width: 768px) {
+        .header {
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    }
 }

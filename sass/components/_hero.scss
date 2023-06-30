@@ -1,16 +1,48 @@
 .hero {
     background-color: $dark-gray;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/backgrund_img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 1600px;
-    height: 600px;
     margin: 0 auto;
 
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../images/backgrund_img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 1600px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../images/header.jpg');
+        background-repeat: no-repeat;
+        max-height: 400px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: 480px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../images/backgrund_img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 1600px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    @media screen and (max-width: 480px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../images/header_mobile.jpg');
+        background-repeat: no-repeat;
+        max-height: 400px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
     &__title {
         color: $white;
         font-weight: 900;
