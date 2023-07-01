@@ -1,0 +1,57 @@
+.clients {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 45px;
+
+    &__h2 {
+    color: #212121;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    }
+
+    &__item {
+    max-width: 210px;
+    background-color: #FFF;;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 52px;
+
+    @include tablet {
+    max-width: 226px;
+    padding: 16px 60px;
+}
+
+    @include deskop {
+    max-width: 170px;
+    padding: 16px 32px;
+    }
+    }
+
+    &__item:hover,
+    &__item:focus {
+    cursor: pointer;
+    border: 1px solid var(--focus-color);
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-timing-function);
+    }
+
+    &__logo {
+    fill: #AFB1B8;
+    }
+
+    &__item:hover &__logo,
+    &__item:focus &__logo {
+    fill: var(--focus-color);
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-timing-function);
+    }
+}

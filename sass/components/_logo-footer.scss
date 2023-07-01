@@ -1,0 +1,27 @@
+.logo-footer {
+    color: var(--focus-color);
+    font-family: 'Raleway';
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            line-height: 1.2;
+            justify-content: center;
+
+
+            @include deskop {
+            font-size: 26px;
+            
+            }
+
+&__color {
+        color: var(--main-background);
+        font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            line-height: 1.2;
+        
+@include deskop {
+    margin-right: 93px;
+}
+}
+}
