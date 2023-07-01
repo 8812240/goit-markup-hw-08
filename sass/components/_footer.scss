@@ -213,6 +213,12 @@ width: 100%;
     padding-left: 16px;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--main-background);
+
+    &:hover {
+        color: var(--focus-color)
+        border: var(--focus-color)
+    }
 
     @include tablet {
         display: flex;
@@ -235,6 +241,10 @@ border-radius: 4px;
 cursor: pointer;
 justify-content: space-between;
 margin-top: 20px;
+
+&:hover {
+    color: var(--button-hover);
+}
 
 @include deskop {
 width: 200px;
