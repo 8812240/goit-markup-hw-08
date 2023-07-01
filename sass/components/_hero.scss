@@ -101,11 +101,11 @@
         padding: 10px 41px;
         border-radius: 4px;
         box-shadow: var(--box-shadow-hero);
-        Background: var(--button-background);
+        background-color: var(--button-color);
+        color: var(--main-background);
 
         &:hover {
-            color: var(--main-background);
-            background: var(--focus-color);
+            color: var(--button-hover);
         }
     }
 }
