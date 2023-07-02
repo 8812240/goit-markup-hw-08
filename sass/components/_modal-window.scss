@@ -110,6 +110,11 @@ border-color: var(--focus-color);
         background-color: var(--main-background);
         box-shadow: var(--box-shadow-team);
         border-radius: 4px;
+        width: 95%;
+        max-width: 450px;
+        height: 95%;
+        max-height: 609px;
+        overflow: scroll;
 
     @include deskop {
     width: 528px;

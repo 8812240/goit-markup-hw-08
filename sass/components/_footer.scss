@@ -1,7 +1,6 @@
 .footer {
 background: var(--footer-color);
-padding: 60px;
-max-width: 1600px;
+padding: 60px 0;
 margin: auto;
 
 @include deskop {
@@ -11,6 +10,9 @@ padding: 60px 0;
 
 &__flex {
 text-align: center;
+row-gap: 60px;
+justify-content: space-around;
+align-items: baseline;
 
 @include tablet {
 display: flex;
@@ -32,8 +34,6 @@ justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 0;
-    margin-left: 15px;
-    margin-right: 70px;
 }
 
 @include deskop {
@@ -153,8 +153,6 @@ fill: var(--main-background);
 
 &__join {
     @include tablet {
-        margin-bottom: 65px;
-        margin-left: 144px;
         justify-content: center;
     
     }
@@ -191,9 +189,7 @@ font-family: "Roboto";
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
-
     display: block;
-    margin-top: 60px;
 
     @include deskop {
         flex-direction: column;
@@ -217,7 +213,6 @@ width: 100%;
 
     &:hover {
         color: var(--focus-color)
-        border: var(--focus-color)
     }
 
     @include tablet {
